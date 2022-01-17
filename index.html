@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Distributor</title>
+</head>
+<style>
+    span.totalAmount {
+        font-size: 20px;
+        font-weight: 600;
+    }
+</style>
+
+<body>
+
+    <div class="input">
+        <h2 draggable="true">Money Distributor</h2>
+        <input type="number" placeholder="Enter Amount..." class="amount">
+        <div class="selectChoice">
+            Preferred Choice : <select name="choicedNote" class="preferredChoice">
+                <option value="">Auto</option>
+                <option value="5000">5000</option>
+                <option value="1000">1000</option>
+                <option value="500">500</option>
+                <option value="100">100</option>
+                <option value="50">50</option>
+                <option value="20">20</option>
+                <option value="10">10</option>
+            </select>
+            <input type="number" placeholder="Choiced quantiy" class="choicedNoteQuantity">
+        </div>
+        <button onclick="doDistribute()">Distribute</button>
+    </div>
+
+    <div class="output">
+        <h2>Distributed Amount : </h2>
+        <p>In <span class="totalAmount">0</span> , the Distribution Will be,</p>
+        <div class="outputQuantity"></div>
+    </div>
+    <script src="./atm.js"></script>
+</body>
+
+</html>
